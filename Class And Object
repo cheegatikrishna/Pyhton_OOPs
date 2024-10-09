@@ -1,0 +1,23 @@
+class Mobile:
+    def __init__(self,brand,name,ram,rom,price):
+        self.brand=brand
+        self.name=name
+        self.ram=ram
+        self.rom=rom
+        self.price=price
+    def display(self):
+        print("Brand",self.brand)
+        print("name",self.name)
+        print("ram",self.ram)
+        print("rom",self.rom)
+        print("price",self.price)
+for i in range(5):
+    b=str(input("enter brand name : "))
+    n=str(input("enter mobile name : "))
+    r=str(input("enter ram : "))
+    c=str(input("enter rom : "))
+    p=str(input("enter price : "))
+    obj=Mobile(b,n,r,c,p)
+    obj.display()
+    print("..........................")
+
