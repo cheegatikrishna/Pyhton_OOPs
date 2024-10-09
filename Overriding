@@ -1,0 +1,15 @@
+class Animal:
+    def sound(self):
+        print("animal makes a sound")
+class Dog(Animal):
+    def sound(self):
+        print("bow bow ")
+        super().sound()
+class Cow(Animal):
+    def sound(self):
+        print("amba amba")
+
+d=Dog()
+c=Cow()
+d.sound()
+c.sound()
