@@ -1,0 +1,8 @@
+class Father:
+    def __init__(self):
+        print("class Father")
+class Raju(Father):
+    def __init__(self):
+        print("class Raju")
+        super().__init__()
+obj=Raju()
