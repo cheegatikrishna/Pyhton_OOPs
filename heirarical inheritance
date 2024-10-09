@@ -1,0 +1,18 @@
+class Grand:
+    def f3(self):
+        print("am grand")
+
+class Parent(Grand):
+    def f(self):
+        print("this is parent")
+class Child(Grand):
+    def f1(self):
+        print("this is child")
+obj=Child()
+obj.f3()
+obj.f1()
+
+obj1=Parent()
+obj1.f()
+obj1.f3()
+
