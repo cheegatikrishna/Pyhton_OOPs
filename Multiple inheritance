@@ -1,0 +1,13 @@
+class Father:
+    def f(self):
+        print("am father of raju")
+class Mother:
+    def m(self):
+        print("am Mother of raju")
+class Raju(Father,Mother):
+    def c(self):
+        print("am raju")
+obj=Raju()
+obj.c()
+obj.m()
+obj.f()
