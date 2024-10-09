@@ -1,0 +1,28 @@
+class Vehicle:
+    def __init__(self,Brand,model,color):
+        self.b=Brand
+        self.m=model
+        self.co=color
+    def move(self):
+        print("moving")
+        
+class Car(Vehicle):
+    pass
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sail")
+
+class Plane(Vehicle):
+    def move(self):
+        print("fly")
+
+c=Car("ac","bmw","black")
+b=Boat("Ibiza", "Touring 20","white")
+
+for x in (c,b):
+    print("Brand:", x.b)
+    print("Model:", x.m)
+    print("Color:", x.co)
+    print("........................")
+
